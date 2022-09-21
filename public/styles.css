@@ -1,0 +1,110 @@
+html,
+body {
+  height: 100%;
+}
+
+html {
+  /* font-size: 125%; */
+  line-height: 1.4;
+  font-family: 'Star Jedi', arial;
+  text-transform: lowercase;
+  color: #ffffff;
+}
+
+body {
+  box-sizing: border-box;
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  grid-template-rows: auto auto 2fr;
+  grid-template-areas:
+    "header header header"
+    "add-quotes update-quote delete-quote"
+    "quotes quotes quotes";
+  gap: 1rem;
+  margin: 0;
+  padding: 1rem;
+  background-color: #ffffff;
+  background-attachment: fixed;
+  background-size: cover;
+}
+
+[data-position="header"] {
+  grid-area: header;
+}
+
+[data-position="add-quotes"] {
+  grid-area: add-quotes;
+}
+
+[data-position="update-quotes"] {
+  grid-area: update-quotes;
+}
+
+[data-position="delete-quotes"] {
+  grid-area: delete-quotes;
+}
+
+[data-position="quotes"] {
+  grid-area: quotes;
+  overflow: scroll;
+}
+
+[data-position] {
+  background-image: url("https://images.unsplash.com/photo-1532978379173-523e16f371f2?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1170&q=80");
+  border-radius: 0.5rem;
+  padding: 1rem;
+  box-shadow: 0 0 5px 0 rgba(255, 255, 255, 0.5);
+}
+
+h1, h2 {
+  margin: 0;
+  color: #ffd003;
+}
+
+.small-text {
+  font-size: 14px;
+  color: #d3d3d3;
+}
+
+#invade {
+  color: #000000;
+  text-shadow:
+      0 0 7px #ffffff,
+      0 0 10px #ffffff,
+      0 0 21px #ffffff,
+      0 0 42px #ff000080,
+      0 0 82px #ff0000a1,
+      0 0 92px #ff0000c2,
+      0 0 102px #ff0000d3,
+      0 0 151px #ff0000;
+}
+
+#vanquish {
+  color: #67d752;
+  text-shadow:
+      0 0 7px #ffffff,
+      0 0 10px #ffffff,
+      0 0 21px #ffffff,
+      0 0 42px #66d75288,
+      0 0 82px #66d752a1,
+      0 0 92px #66d752c2,
+      0 0 102px #66d752da,
+      0 0 151px #67d752;
+}
+
+input {
+  background: none;
+  border-radius: 5px;
+  font-family: 'Star Jedi', arial;
+  text-transform: lowercase;
+  cursor: pointer;
+  color: #ffffff;
+}
+
+button {
+  border-radius: 5px;
+  font-family: 'Star Jedi', arial;
+  text-transform: lowercase;
+  padding-bottom: 5px;
+  cursor: pointer;
+}

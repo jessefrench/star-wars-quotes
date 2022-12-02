@@ -6,6 +6,7 @@ const app = express()
 // Link to database
 require("dotenv").config({ path: "./config/.env" })
 const connectionString = process.env.DB_STRING
+const PORT = process.env.PORT
 
 MongoClient.connect(connectionString, { useUnifiedTopology: true })
     .then(client => {
@@ -71,8 +72,8 @@ MongoClient.connect(connectionString, { useUnifiedTopology: true })
         })
 
         // Listen
-        app.listen(3000, () => {
-            console.log('listening on port 3000')
+        app.listen(process.env.PORT, () => {
+            console.log(`listening on port ${PORT}`)
         })
     })
     .catch(console.error)

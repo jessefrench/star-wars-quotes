@@ -1,7 +1,7 @@
 # Star Wars Quotes App
 A simple full-stack app that demonstrates basic CRUD operations with Star Wars quotes.
 
-**Link to project:** https://your-project-link.com
+**Link to project:** https://star-wars-quotes.up.railway.app
 
 <img width="960" alt="star-wars-app-screenshot" src="https://user-images.githubusercontent.com/106822556/205366676-5d604ca8-c541-4455-ae89-ab94927a18fe.png">
 

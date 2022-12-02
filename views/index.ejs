@@ -4,17 +4,18 @@
         <meta charset="UTF-8" />
         <title>Star Wars Quote App</title>
         <link rel="stylesheet" href="/styles.css" />
-        <link href="//db.onlinewebfonts.com/c/0c724f6aa457310440cf8949c615cbd7?family=Star+Jedi" rel="stylesheet" type="text/css"/>    </head>
+        <link href="//db.onlinewebfonts.com/c/0c724f6aa457310440cf8949c615cbd7?family=Star+Jedi" rel="stylesheet" type="text/css"/>
+    </head>
     <body>
 
     <h1 data-position="header">May Node and Express be with you.</h1>
 
     <section data-position="add-quote">
-        <h2>Add quote</h2>
+        <h2 id="addQuote">Add quote</h2>
         <form action="/quotes" method="POST">
           <input type="text" placeholder="Name" name="name" />
           <input type="text" placeholder="Quote" name="quote" />
-          <button type="submit">Submit</button>
+          <button id="submit" type="submit">Submit</button>
         </form>
     </section>
 
@@ -30,7 +31,7 @@
     <section data-position="delete-quote">
         <div>
             <h2 id="vanquish">Vanquish Darth Vadar!</h2>
-            <p>Delete one Darth Vadar quote.</p>
+            <p id="deleteOne">Delete one Darth Vadar quote.</p>
             <p class="small-text">Does nothing if there are no more Darth Vadar quotes.</p>
             <button id="delete-button">Delete Darth Vadar quote</button>
         </div>
